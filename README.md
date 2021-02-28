@@ -1,40 +1,20 @@
-# Reference
-🗒Reference repositories
+# Daily Algorithms
 
-## 🔗Reference Link
+- 하루에 알고리즘 한 문제씩 푼 기록을 남깁니다.
 
-[Ducks: Redux Reducer Bundles](https://github.com/erikras/ducks-modular-redux)
+- 참고한 레퍼런스가 있다면 함께 남깁니다.
 
-[Gatsby 기반 blog](https://github.com/iamchanii/blog)
+### Recursion
 
+- (Udemy)JavaScript Algorithms and Data Structure Master Class
 
-## 🎓Tutorial
+| #   | Title             | Solution     | Difficulty | Date     |
+| --- | ----------------- | ------------ | ---------- | -------- |
+| 1   | [reverse]()       | `Javascript` | Easy       | 21/03/01 |
+| 2   | [isPalindrome]()  | `Javascript` | Easy       | 21/03/02 |
+| 3   | [someRecursive]() | `Javascript` | Easy       | 21/03/03 |
+| 4   | [flatten]()       | `Javascript` | Easy       | 21/03/04 |
 
-[Serverless로 게임 서비스 구현하기](https://github.com/bskim/gamingonaws2017_serverless)
+---
 
-[Flexbox | Wesbos](https://github.com/wesbos/What-The-Flexbox)
-
-[벨로퍼트와 함께하는 모던 자바스크립트](https://github.com/velopert/learnjs)
-
-[Learn regex](https://github.com/ziishaned/learn-regex)
-
-## 🙏Coding Test/Interview
-
-[Coding Test - 면접 문제은행](https://github.com/jewdri-kim/codingTest)
-
-[Reactjs interview questions](https://github.com/appear/reactjs-interview-questions-ko)
-
-## 📚Coding Books
-
-[Clean Code(번역본)](https://github.com/qkraudghgh/clean-code-javascript-ko)
-
-[You don't know JS](https://github.com/getify/You-Dont-Know-JS)
-
-## ䷳Framework & Library
-
-[billboard.js: JS chart library](https://github.com/naver/billboard.js)
-
-[TOAST UI editor](https://github.com/nhn/tui.editor)
-
-
-
+### Reference
