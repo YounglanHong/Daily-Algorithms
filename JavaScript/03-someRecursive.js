@@ -8,3 +8,9 @@ function someRecursive(arr, cb) {
   });
   return result;
 }
+
+// const isOdd = (el) => el % 2 !== 0;
+// const isEven = (el) => el % 2 === 0;
+// someRecursive([1, 3, 5, 6], isOdd);  // true
+// someRecursive([1, 3, 5, 6], isEven);  // true
+// someRecursive([1, 3, 5], isEven);  // false
