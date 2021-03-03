@@ -14,3 +14,11 @@ function someRecursive(arr, cb) {
 // someRecursive([1, 3, 5, 6], isOdd);  // true
 // someRecursive([1, 3, 5, 6], isEven);  // true
 // someRecursive([1, 3, 5], isEven);  // false
+
+/* 
+function someRecursive(array, callback) {
+    if (array.length === 0) return false;
+    if (callback(array[0])) return true;
+    return someRecursive(array.slice(1),callback);
+}
+*/
