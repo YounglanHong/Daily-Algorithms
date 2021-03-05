@@ -15,6 +15,7 @@
 | 3   | [someRecursive]()   | `Javascript` | Easy       | 21/03/03 |
 | 4   | [flatten]()         | `Javascript` | Easy       | 21/03/04 |
 | 5   | [capitalizeFirst]() | `Javascript` | Easy       | 21/03/05 |
+| 6   | [capitalizeWords]() | `Javascript` | Easy       | 21/03/05 |
 
 ---
 
