@@ -4,10 +4,6 @@
 
 - 참고한 레퍼런스가 있다면 함께 남깁니다.
 
-### Recursion
-
-- (Udemy)JavaScript Algorithms and Data Structure Master Class
-
 | #   | Title                | Solution     | Difficulty | Date     |
 | --- | -------------------- | ------------ | ---------- | -------- |
 | 1   | [reverse]()          | `Javascript` | Easy       | 21/03/01 |
@@ -22,4 +18,8 @@
 
 ---
 
-### Reference
+## Reference
+
+### Recursion
+
+- (Udemy)JavaScript Algorithms and Data Structure Master Class
