@@ -189,6 +189,53 @@ class DoublyLinkedList {
     this.length--;
     return getNode;
   }
+
+  // Prints all the values in array by order
+  print() {
+    let arr = [];
+    let curr = this.head;
+
+    while (curr) {
+      arr.push(curr.val);
+      curr = curr.next;
+    }
+    console.log(arr);
+  }
+
+  // list.print();   // ["Hello", "World", "🖐🏻", "🙇🏻‍♀️"]
+
+  // ⭐️Reverse in place!
+  reverse() {
+    // Start from the head
+    let node = this.head;
+    // Store current head
+    let tail = node;
+
+    let prev = null,
+      next;
+
+    for (let i = 0; i < this.length; i++) {
+      // Store current next
+      next = node.next;
+      // Swap next and prev
+      node.next = prev;
+      node.prev = next;
+      // Move forward
+      prev = node;
+      node = next;
+      // console.log("node", node, prev, next);
+
+      // TypeError(when node is null)
+      if (node && !node.next) {
+        // Swap head and tail
+        this.head = this.tail;
+        this.tail = tail; // old head
+      }
+    }
+
+    return this;
+  }
+  // list.print();   // ["🙇🏻‍♀️", "🖐🏻", "World", "Hello"]
 }
 
 let list = new DoublyLinkedList();
@@ -196,6 +243,10 @@ list.push("Hello");
 list.push("World");
 list.push("🖐🏻");
 list.push("🙇🏻‍♀️");
+// list.push("1");
+// list.push("2");
+// list.push("3");
+// list.push("4");
 ```
 
 ## Big-O of Doubly Linked List
