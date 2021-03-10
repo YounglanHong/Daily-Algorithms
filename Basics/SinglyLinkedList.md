@@ -227,3 +227,5 @@ list.push("🖐🏻");
 | Deletion(remove)         | **`O(1)`** => `O(n)` |
 | Search(for value)        | `O(n)`               |
 | Access(by index)         | `O(n)`               |
+
+💚[Big-O Cheatsheet](https://www.bigocheatsheet.com/)
