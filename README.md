@@ -16,6 +16,7 @@
 | 8   | [stringifyNumbers]()                                                        | `Javascript` | Easy       | 21/03/06 |
 | 9   | [collectStrings]()                                                          | `Javascript` | Easy       | 21/03/06 |
 | 10  | [✳️crossingTruck](https://programmers.co.kr/learn/courses/30/lessons/42583) | `Javascript` | Lv.2       | 21/03/07 |
+| 11  | [printQueue](https://programmers.co.kr/learn/courses/30/lessons/42587)      | `Javascript` | Lv.2       | 21/03/08 |
 
 ---
 
