@@ -4,7 +4,7 @@
 
   - 예시) 함수 호출(콜스택), 실행 취소/다시 실행(undo/redo), 라우팅(history 객체)
 
-    ![Stack](./Basic_Image/Stack.png)
+    ![Stack](./Basic_Image/stack.png)
 
   ### Stack using Array
 
