@@ -136,6 +136,16 @@ g.addEdge("D", "E");
 g.addEdge("D", "F");
 g.addEdge("E", "F");
 
+/* 
+        A
+      /   \
+     B     C
+     |     |
+     D --- E
+      \   /
+        F
+*/
+
 // g.DFS_Recur("A"); // ["A", "B", "D", "E", "C", "F"]
 // g.DFS_Iter("A"); // ["A", "C", "E", "F", "D", "B"]
 g.BFS("A"); // ["A", "B", "C", "D", "E", "F"]
