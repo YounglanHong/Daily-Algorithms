@@ -27,7 +27,8 @@
 | 19  | [⭐️treeTraversal(BFS,DFS)](https://github.com/YounglanHong/Daily-Algorithms/blob/master/Basics/DFS-BFS.md)                     | `Javascript` | Basic      | 21/03/16 |
 | 20  | [binaryHeap](https://github.com/YounglanHong/Daily-Algorithms/blob/master/Basics/BinaryHeap.md)                                 | `Javascript` | Basic      | 21/03/17 |
 | 21  | [hashTable](https://github.com/YounglanHong/Daily-Algorithms/blob/master/Basics/HashTable.md)                                   | `Javascript` | Basic      | 21/03/18 |
-| 22  | [Graph](https://github.com/YounglanHong/Daily-Algorithms/blob/master/Basics/Graph.md)                                           | `Javascript` | Basic      | 21/03/19 |
+| 22  | [graph](https://github.com/YounglanHong/Daily-Algorithms/blob/master/Basics/Graph.md)                                           | `Javascript` | Basic      | 21/03/19 |
+| 23  | [⭐️graphTraversal(BFS,DFS)](https://github.com/YounglanHong/Daily-Algorithms/blob/master/Basics/GraphTraversal.md)             | `Javascript` | Basic      | 21/03/20 |
 
 ---
 
