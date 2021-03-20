@@ -108,6 +108,7 @@ class Graph {
       vertex = queue.shift(); // *** Shift from the beginning
       result.push(vertex);
       // Loop over adjacencyList
+      // adjacencyList[vertex].slice().reverse().forEach((v) => { // *backwards
       adjacencyList[vertex].forEach((v) => {
         if (!visited[v]) {
           visited[v] = true;
@@ -137,5 +138,6 @@ g.addEdge("E", "F");
 
 // g.DFS_Recur("A"); // ["A", "B", "D", "E", "C", "F"]
 // g.DFS_Iter("A"); // ["A", "C", "E", "F", "D", "B"]
-// g.BFS("A"); // ["A", "B", "C", "D", "E", "F"]
+g.BFS("A"); // ["A", "B", "C", "D", "E", "F"]
+g.BFS("A"); // ["A", "C", "B", "E", "D", "F"] // *backwards
 ```
