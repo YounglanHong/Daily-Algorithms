@@ -31,6 +31,7 @@
 | 23  | [⭐️graphTraversal(BFS,DFS)](https://github.com/YounglanHong/Daily-Algorithms/blob/master/Basics/GraphTraversal.md)             | `Javascript` | Basic      | 21/03/20 |
 | 24  | [participant](https://programmers.co.kr/learn/courses/30/lessons/42576)                                                         | `Javascript` | Lv.1       | 21/03/21 |
 | 25  | [✳️bestAlbum](https://programmers.co.kr/learn/courses/30/lessons/42579#)                                                        | `Javascript` | Lv.3       | 21/03/22 |
+| 26  | [Dijkstra'sAlgorithm](https://github.com/YounglanHong/Daily-Algorithms/blob/master/Basics/Dijkstra'sAlgorithm.md)               | `Javascript` | Basic      | 21/03/23 |
 
 ---
 
