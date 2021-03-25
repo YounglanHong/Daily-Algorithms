@@ -33,6 +33,7 @@
 | 25  | [✳️bestAlbum](https://programmers.co.kr/learn/courses/30/lessons/42579#)                                                        | `Javascript` | Lv.3       | 21/03/22 |
 | 26  | [💚Dijkstra'sAlgorithm](https://github.com/YounglanHong/Daily-Algorithms/blob/master/Basics/Dijkstra'sAlgorithm.md)             | `Javascript` | Basic      | 21/03/23 |
 | 26  | [💚Dynamic Programming](https://github.com/YounglanHong/Daily-Algorithms/blob/master/Basics/DynamicProgramming.md)              | `Javascript` | Basic      | 21/03/24 |
+| 27  | [💛Permutations](https://leetcode.com/problems/permutations/)                                                                   | `Javascript` | Basic      | 21/03/25 |
 
 ---
 
