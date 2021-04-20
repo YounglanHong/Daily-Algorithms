@@ -2,6 +2,7 @@
 // RegExp
 // https://programmers.co.kr/learn/courses/30/lessons/72410#
 
+// Solution #1
 function solution(new_id) {
   // #1: 대문자를 소문자화
   new_id = new_id.toLowerCase();
@@ -28,4 +29,35 @@ function solution(new_id) {
   }
   // console.log(new_id)
   return new_id;
+}
+
+// Solution #2
+function solution(new_id) {
+  const answer = new_id
+    .toLowerCase() // #1
+    .replace(/[^\w-.]/g, "") // #2 (\w: [a-zA-Z0-9_])
+    .replace(/\.{2,}/g, ".") // #3
+    .replace(/^\.|\.$/g, "") // #4
+    .replace(/^$/, "a") // #5
+    .slice(0, 15)
+    .replace(/\.$/, ""); // #6
+  const length = answer.length;
+  return length > 2
+    ? answer
+    : answer + answer.charAt(length - 1).repeat(3 - length);
+}
+
+// Solution #3
+// (https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/padEnd)
+function solution(new_id) {
+  const answer_id = new_id
+    .toLowerCase() // #1
+    .replace(/[^\w-.]/g, "") // #2 (\w: [a-zA-Z0-9_])
+    .replace(/\.{2,}/g, ".") // #3
+    .replace(/^\.|\.$/g, "") // #4
+    .padEnd(1, "a") // #5
+    .slice(0, 15)
+    .replace(/\.$/, ""); // #6
+
+  return answer_id.padEnd(3, answer_id[answer_id.length - 1]);
 }
