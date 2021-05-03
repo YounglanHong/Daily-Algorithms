@@ -11,7 +11,7 @@ function solution(jobs) {
     jobsLength = jobs.length;
   let permuteJobs = permute(jobs, [], []);
 
-  permuteJobs.forEach((jobs) => {
+  permuteJobs.forEach((jobs) => {å
     totalTime = 0;
     for (let job of jobs) {
       finishTime = Math.abs(totalTime - job[0] + job[1]);
@@ -61,5 +61,43 @@ function solution(jobs) {
   return avgTime;
 }
 
+// Solution #3
+function solution(jobs) {
+  // 🔑 작업에 걸린 평균시간이 가장 최소인 작업 순서
+  // [요청시간, 소요시간]
+  // 1) '하드디스크가 작업을 수행하고 있지 않을 때에는 먼저 요청이 들어온 작업부터 처리'
+  // 2) 우선순위 큐: 작업에 걸린 평균시간이 가장 최소인 작업 순서
+  // 조건: jobs 또는 priorQ 모두 처리
+  
+  let i = 0, time = 0, total = 0; // 현재시간과 소요시간
+  // 1) 요청시간 기준으로 오름차순 정렬
+  jobs.sort((a, b) => a[0] - b[0]); 
+  
+  // 2) 소요시간 기준 오름차순 정렬
+  const priorQ = [];
+  
+  while(i < jobs.length || priorQ.length !== 0) {
+      // console.log(priorQ);
+      // 조건: 작업이 job 안에 있고, 현재시간보다 요청시간 작은 경우
+      if(i < jobs.length && jobs[i][0] <= time) {
+          priorQ.push(jobs[i++]);
+          priorQ.sort((a, b) => a[1] - b[1]);
+          continue;
+      }
+      // priorQ 안의 작업 처리
+      if(priorQ.length !== 0) {
+          time += priorQ[0][1];
+          total += time - priorQ[0][0];
+          priorQ.shift();
+      } else {
+          time = jobs[i][0];
+      }
+      // console.log("현재:", time," 소요:", total);
+  }
+  // 총 소요시간의 평균시간 반환(정수)
+  return parseInt(total / jobs.length);
+}
+
 // solution([[0, 3], [1, 9], [2, 6]]) // 9
-// solution([[0, 4], [0, 3], [0, 2], [0, 1]]) // 6
+
+// ⭐️ 참고: Basics/Basic_Image/discController.png
