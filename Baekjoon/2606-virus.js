@@ -1,3 +1,6 @@
+//2606-바이러스
+// dfs, bfs
+
 const fs = require('fs');
 
 const input = fs.readFileSync("input.js").toString().trim().split("\n");

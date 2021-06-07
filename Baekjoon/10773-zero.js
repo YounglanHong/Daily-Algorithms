@@ -1,4 +1,5 @@
 // 10773 zero
+// 스택
 
 const fs = require('fs');
 
