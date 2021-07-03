@@ -40,6 +40,19 @@ function solution(A) {
 }
 
 
+// Time Complexity: O(N) or O(N * log(N))
+function solution(A) {
+  A.sort((a, b) => a - b);
+
+  // value within [1... (N + 1)] missing
+  for(let i = 0; i < A.length; i++) {
+      if(A[i] !== i + 1) return i + 1;
+  }
+  // (N + 1) is missing
+  return A.length + 1;
+}
+
+
 /* 
 describe("Find missing element in a given permutation"), () => {
   test("given array is []"), () => {
