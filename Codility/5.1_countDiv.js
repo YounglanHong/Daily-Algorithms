@@ -1,4 +1,4 @@
-// Lesson 4: Prefix Sums
+// Lesson 5: Prefix Sums
 // CountDiv
 // Compute number of integers divisible by k in range [a..b].
 // https://app.codility.com/programmers/lessons/5-prefix_sums/

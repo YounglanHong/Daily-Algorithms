@@ -1,4 +1,4 @@
-// Lesson 4: Prefix Sums
+// Lesson 5: Prefix Sums
 // GenomicRangeQuery
 // Find the minimal nucleotide from a range of sequence DNA.
 // https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/

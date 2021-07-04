@@ -1,4 +1,4 @@
-// Lesson 4: Prefix Sums(구간 합)
+// Lesson 5: Prefix Sums(구간 합)
 // P[k] = P[k-1] + A[k-1]
 // range [a, b]
 

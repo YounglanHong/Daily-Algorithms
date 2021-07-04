@@ -1,4 +1,4 @@
-// Lesson 4: Prefix Sums
+// Lesson 5: Prefix Sums
 // PassingCars
 // Count the number of passing cars on the road.
 // https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
