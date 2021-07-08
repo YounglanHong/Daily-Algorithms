@@ -151,3 +151,21 @@ g.addEdge("E", "F");
 g.BFS("A"); // ["A", "B", "C", "D", "E", "F"]
 g.BFS("A"); // ["A", "C", "B", "E", "D", "F"] // *backwards
 ```
+
+## Big-O of Adjacency List & Matrix
+
+- `|V|`: `vertex`(정점)의 총 개수
+- `|E|`: `edge`(간선)의 총 개수
+
+| Algorithm     | Time          | 
+| ------------- | ------------- | 
+| BFS           | `O(V + E)`    |
+| DFS           | `O(V + E)`    |
+
+
+
+### Reference
+
+[Chap 3: Time Complexity | Codility](https://codility.com/media/train/1-TimeComplexity.pdf)
+
+[<JavaScript Data Structures and Algorithms> by. Sammie Bae](https://www.amazon.com/-/ko/dp/1484239873/ref=pd_lpo_14_img_0/136-8036518-2120809?_encoding=UTF8&pd_rd_i=1484239873&pd_rd_r=679e973e-f229-4819-9d27-7f05b1d5ffb4&pd_rd_w=KQdTD&pd_rd_wg=ftb6V&pf_rd_p=fb1e266d-b690-4b4f-b71c-bd35e5395976&pf_rd_r=PW8Q00K68M9H7N00EFH7&psc=1&refRID=PW8Q00K68M9H7N00EFH7)
