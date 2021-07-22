@@ -9,6 +9,8 @@
 // 2. Check visited elements on the board
 // 3. Return new board
 
+// O(M * N)
+
 var solve = function(board) {
   const M = board.length;
   const N = (board[0] || []).length;
