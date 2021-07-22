@@ -244,7 +244,7 @@ const countIslands = (graph) => {
   return count;
 }
 
-countIslands(graph);
+countIslands(graph); // 5
 
 /*
 let graph = [
@@ -254,3 +254,55 @@ let graph = [
   [0, 0, 0, 0, 0], 
   [1, 0, 1, 0, 1]
 ]; */
+
+// BFS
+const N = graph.length, M = graph[0].length;
+
+const isSafe = (graph, row, col, visited) => {
+  const checkRC = row >= 0 && row < N && col >= 0 && col < M
+  && (graph[row][col] === 1 && !visited[row][col]);
+
+  return checkRC;
+}
+
+const bfs = (graph, row, col, visited) => {
+  let rowX = [-1, -1, -1, 0, 0, 1, 1, 1];
+  let colY = [-1, 0, 1, -1, 1, -1, 0, 1];
+
+  let queue = [];
+  queue.push([row, col]);
+  visited[row][col] = true;
+
+  while(queue.length) {
+    let x = queue[0][0];
+    let y = queue[0][1];
+    queue.shift();
+
+    for(let i = 0; i < 8; i++) {
+      let nx = x + rowX[i];
+      let ny = y + colY[i];
+      if(isSafe(graph, nx, ny, visited)) {
+        visited[nx][ny] = true;
+        queue.push([nx, ny]);
+      }
+    }
+  }
+}
+
+const countIslands = (graph) => {
+  let visited = Array.from(Array(N), (_) => Array(M).fill(false));
+
+  let count = 0;
+
+  for(let i = 0; i < N; i++) {
+    for(let j = 0; j < M; j++) {
+      if(graph[i][j] === 1 && !visited[i][j]) {
+        bfs(graph, i, j, visited);
+        count++;
+      }
+    }
+  }
+  return count;
+}
+
+countIslands(graph); // 5
