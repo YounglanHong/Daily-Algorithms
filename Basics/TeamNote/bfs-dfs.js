@@ -306,3 +306,37 @@ const countIslands = (graph) => {
 }
 
 countIslands(graph); // 5
+
+/*******************************************************/
+// Q3: Find PowerSet(부분 집합)
+// DFS
+// (ref: https://jun-choi-4928.medium.com)
+
+function getSubset(arr) {
+  const N = arr.length;
+  let flag = new Array(N).fill(false);
+  let result = [];
+
+  function subSet(depth) {
+    // 탈출 조건
+    if(depth === N) {
+      // flag가 true 일 때 부분집합 포함
+      result.push(arr.filter((v, idx) => flag[idx])); 
+      return;
+    } 
+    // left node: true
+    flag[depth] = true; 
+    subSet(depth + 1);
+
+    // right node: false
+    flag[depth] = false;
+    subSet(depth + 1);
+
+  }
+  subSet(0); // 0부터 시작
+  return result;
+  
+}
+
+getSubset([1, 2, 3]);
+// [ [], [1], [2], [3],  [1, 2], [1, 3], [2, 3], [1, 2, 3] ]
