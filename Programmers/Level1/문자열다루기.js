@@ -7,9 +7,10 @@ function solution(s) {
   const N = s.length;
 
   if(N === 4 || N === 6) {
-      if(s.includes("e")) return false;
+      if(s.includes("e")) return false; // "123e"
       // Number(s) || parseInt(s) || +s === NaN
-      return +s ? true : false;
+      // return +s ? true : false;
+      return parseInt(s, 10) ? true : false; // "0x11"
   }
   return false;    
 }
